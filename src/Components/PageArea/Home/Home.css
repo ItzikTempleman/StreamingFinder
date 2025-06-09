@@ -1,0 +1,22 @@
+.Home {
+
+}
+
+.MediaListContainer {
+    padding: 20px;
+}
+
+.MediaListContainer h3 {
+    margin-bottom: 16px;
+}
+
+.MediaList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+img {
+    width: 180px;
+    height: 220px;
+}
