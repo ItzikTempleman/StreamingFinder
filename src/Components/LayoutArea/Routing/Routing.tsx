@@ -2,9 +2,9 @@ import "./Routing.css";
 
 import {Navigate, Route, Routes} from "react-router-dom";
 import {Profile} from "../../PageArea/Profile/Profile.tsx";
-import {Home} from "../../PageArea/Home/Home.tsx";
+import {Home} from "../../PageArea/HomeArea/Home.tsx";
 import {Page404} from "../../PageArea/Page404/Page404.tsx";
-import {MovieDetails} from "../../PageArea/Home/MovieArea/MovieDetails/MovieDetails.tsx";
+import {MovieDetails} from "../../PageArea/MovieDetails/MovieDetails.tsx";
 
 
 export function Routing() {

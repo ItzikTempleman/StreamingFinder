@@ -1,5 +1,5 @@
 import "./MovieCard.css";
-import type {MovieModel} from "../../../../../Models/MovieModel.ts";
+import type {MovieModel} from "../../../../Models/MovieModel.ts";
 import {useNavigate} from "react-router-dom";
 
 type MovieCardProps = {

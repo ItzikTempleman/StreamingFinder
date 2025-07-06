@@ -11,6 +11,15 @@
     width: 200px !important;
 }
 
+.movie-select {
+    height: 36px !important;
+    width: 100% !important;
+    font-family: Arial !important;
+    padding: 4px 10px !important;
+    line-height: 1.2 !important;
+    min-height: unset !important;
+}
+
 
 .MuiMenuItem-root {
     height: 36px !important;

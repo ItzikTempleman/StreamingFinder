@@ -30,27 +30,28 @@ export function MovieSelector() {
 
     return (
         <div className="MovieSelector">
-        <FormControl className="movie-form-control">
-        <TextField
-            label="Search movie or tv show"
-    inputProps={{minLength: 4, maxLength: 30}}
-    required
-    placeholder="Search movie or tv show"
-    value={selectedMovie}
-    onChange={handleInputChange}
-    />
-    </FormControl>
+            <FormControl className="movie-form-control">
+                <TextField className="movie-select"
+                           label="Search movie or tv show"
+                           inputProps={{minLength: 4, maxLength: 30}}
+                           required
+                           fullWidth
+                           placeholder="Search movie or tv show"
+                           value={selectedMovie}
+                           onChange={handleInputChange}
+                />
+            </FormControl>
 
-    <Button
-    className="search-btn"
-    type="button"
-    style={{backgroundColor: "#ffffff", color: "#1e5b8c"}}
-    variant="contained"
-    onClick={searchMovie}
-    startIcon={<SearchIcon/>}>
-    Search
-    </Button>
+            <Button
+                className="search-btn"
+                type="button"
+                style={{backgroundColor: "#ffffff", color: "#1e5b8c"}}
+                variant="contained"
+                onClick={searchMovie}
+                startIcon={<SearchIcon/>}>
+                Search
+            </Button>
 
-    </div>
-);
+        </div>
+    );
 }

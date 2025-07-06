@@ -1,7 +1,7 @@
 import "./Home.css";
 import {useSelector} from "react-redux";
 import type {AppState} from "../../../Redux/Store.ts";
-import {MovieCard} from "./MovieArea/MovieCard/MediaCard.tsx";
+import {MovieCard} from "./MovieCard/MediaCard.tsx";
 
 
 export function Home() {
