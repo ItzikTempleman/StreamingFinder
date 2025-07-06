@@ -1,8 +1,8 @@
 .Header {
     height: 100%;
-    display:flex;
-    color: #455b85;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-font-style: italic;
-    font-weight: lighter;
+    gap: 15px;
+    justify-content: flex-start;
 }

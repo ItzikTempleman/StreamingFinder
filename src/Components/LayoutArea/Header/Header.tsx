@@ -1,9 +1,11 @@
-import "./Header.css";
+import {MovieSelector} from "./MovieSelector/MovieSelector.tsx";
 
 export function Header() {
     return (
-        <div className="Header">
-            <h4>Find movies & tv shows streaming service</h4>
-        </div>
+
+        <span className="Header">
+           <h3>Movie finder</h3>
+            <MovieSelector/>
+</span>
     );
 }

@@ -1,16 +1,12 @@
-.Home {
-
-}
-
-.MediaListContainer {
+.MovieListContainer {
     padding: 20px;
 }
 
-.MediaListContainer h3 {
+.MovieListContainer h3 {
     margin-bottom: 16px;
 }
 
-.MediaList {
+.MovieList {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 16px;

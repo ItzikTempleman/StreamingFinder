@@ -1,0 +1,32 @@
+.MovieSelector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 100px;
+}
+
+
+.movie-form-control {
+    width: 200px !important;
+}
+
+
+.MuiMenuItem-root {
+    height: 36px !important;
+    font-family: Arial !important;
+    border-radius: 4px;
+}
+
+.MuiOutlinedInput-notchedOutline {
+    border-color: #ccc !important;
+}
+
+.MuiSelect-root {
+    font-family: Arial !important;
+
+}
+
+.search-btn {
+    font-family: Arial !important;
+}

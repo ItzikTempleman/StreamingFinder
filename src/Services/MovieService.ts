@@ -1,9 +1,11 @@
-import type {MediaModel} from "../Models/MediaModel.ts";
+import type {MovieModel} from "../Models/MovieModel.ts";
 import axios from "axios";
 import {appConfig} from "../Utils/AppConfig.ts";
+import {store} from "../Redux/Store.ts";
+import {movieSlice} from "../Redux/MovieSlice.ts";
 
-class MediaService {
-    public async getMediaFromQuery(title: string): Promise<MediaModel[]> {
+class MovieService {
+    public async getMovieFromQuery(title: string):Promise<void>{
         const options = {
             params: {
                 title,
@@ -19,9 +21,9 @@ class MediaService {
             }
         };
 
-        const response = await axios.get<MediaModel[]>(`${appConfig.baseUrl}/shows/search/title`, options);
-        return response.data;
+        const response = await axios.get<MovieModel[]>(`${appConfig.baseUrl}/shows/search/title`, options);
+        store.dispatch(movieSlice.actions.initMovieState(response.data))
     }
 }
 
-export const mediaService = new MediaService();
+export const movieService = new MovieService();

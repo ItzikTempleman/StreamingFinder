@@ -2,7 +2,7 @@ import type {Genres} from "./Genres.ts";
 import type {ImageSet} from "./ImageSet.ts";
 import type {StreamingOptions} from "./StreamingOptions.ts";
 
-export class MediaModel {
+export class MovieModel {
     public id?: number;
     public title?: string;
     public overview?: string;
